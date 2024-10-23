@@ -9,7 +9,7 @@ pipeline {
         }
         stage('init') {
             steps {
-                sh 'terraform init -upgrade'
+                sh 'terraform init -reconfigure'
             }
         }
         stage('validate') {
